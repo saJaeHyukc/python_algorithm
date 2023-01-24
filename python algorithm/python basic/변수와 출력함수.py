@@ -35,10 +35,12 @@ print(a) #student
 print(type(a)) #string
 
 #출력방식
-print("number")
+print("number") # number
 a, b, c = 1, 2, 3
-print(a, b, c)
-print("number: ", a, b, c)
-print(a, b, c, sep=', ')
-print(a, b, c, sep=',')
+print(a, b, c) #1 2 3
+print("number: ", a, b, c) # number : 1 2 3
+print(a, b, c, sep=', ') #1, 2, 3
+print(a, b, c, sep=',') #1,2,3
+print(a, end=' ') # a \n
+print(b, end=' ') # b \n
 

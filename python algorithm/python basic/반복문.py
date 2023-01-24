@@ -32,15 +32,22 @@ while True:
 # continue
 for i in range(1, 11):
     if i % 2 == 0:
-        continue # continue 하면 해당 아래의 for 문 다음으로 넘어가버림
+        continue # continue 하면 아래의 조건 실행하지 않음
     print(i) # 1 3 5 7 9
     
-
+# for else 
 for i in range(1, 11):
     print(i)
-    if i > 15:
-        break
+    if i == 5: #해당 조건에 맞고 break걸면 for else문은 안나옴
+        break 
 else:
-    print(11)
+    print(11) 
+    
+for i in range(1, 11):
+    print(i)
+    if i < 15 : #조건에 안맞으면 아래 11까지 다나옴
+        break 
+else:
+    print(11) 
 
     
