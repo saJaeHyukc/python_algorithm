@@ -2,6 +2,19 @@
 문자열과 내장함수
 '''
 
+''' 요약
+upper: 대문자로 바꿈
+lower: 소문자로 바꿈
+find: 해당 인자값 인덱스 번호를 알려줌
+count: 인자값이 몇개 있는지 알려줌
+len: 길이 알려줌
+isupper: 대문자면 True
+islower: 소문자면 True
+isalpha: 알파벳이면 True
+ord: 문자열의 아스키 넘버 출력
+chr: 아스키넘버의 문자열을 출력
+'''
+
 msg = "It is Time"
 print(msg.upper()) # IT IS TIME, upper 대문자로 바꿈
 print(msg.lower()) # it is time, lower 소문자로 바꿈

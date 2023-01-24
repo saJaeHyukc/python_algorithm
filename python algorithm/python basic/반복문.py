@@ -21,7 +21,7 @@ while i <= 10:
     print(i) # 1,2,3,4,5,6,7,8,9,10
     i = i+1
 
-# break
+# break: 중간에 for문을 나감
 i = 1
 while True:
     print(i) #무한 반복
@@ -29,7 +29,7 @@ while True:
         break # i가 10일 때 반복문 멈춤
     i += 1 # 축약 연산자
 
-# continue
+# continue: 아래의 조건은 실행하지 않고 다음 for문으로 넘어감
 for i in range(1, 11):
     if i % 2 == 0:
         continue # continue 하면 아래의 조건 실행하지 않음
