@@ -124,11 +124,13 @@ def solution(num):
         elif num % 2 == 1:
             num = (num * 3) + 1
             cnt += 1
-        
         if  cnt > 500:
             return -1
     return cnt
 
-print(solution(6))
-print(solution(16))
-print(solution(626331))
+'''
+서울에서 김서방 찾기
+'''
+def solution(seoul):
+    return f"김서방은 {seoul.index('Kim')}에 있다"
+
