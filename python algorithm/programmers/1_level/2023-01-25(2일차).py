@@ -93,3 +93,42 @@ def solution(n):
     for i in range(1, n):
         if n % i == 1:    
             return i
+        
+'''
+두 정수 사이의 합
+'''
+def solution(a, b):
+    total = 0
+    if a < b:
+        for i in range(a, b+1):
+            total += i
+    else: 
+        for i in range(b, a+1):
+            total += i
+    return total
+
+'''
+콜라츠 추측
+생각
+#1. 입력된 수가 짝수면 2로 나눈다
+#2. 입력된 수가 홀수면 3을 곱하고 1을 더한다
+#3. 결과로 나온 수에 같은 작업을 1이 될 때까지 반복
+#4. 500번이 넘어가면 -1을 반환
+'''
+def solution(num):
+    cnt = 0
+    while num > 1:
+        if num % 2 == 0:
+            num = num // 2
+            cnt += 1
+        elif num % 2 == 1:
+            num = (num * 3) + 1
+            cnt += 1
+        
+        if  cnt > 500:
+            return -1
+    return cnt
+
+print(solution(6))
+print(solution(16))
+print(solution(626331))
