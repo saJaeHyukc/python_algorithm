@@ -36,9 +36,9 @@ print(n)
 a = list(range(21))
 for _ in range(10):
     s, e = map(int, input().split())
-    for i in range((e-s+1) // 2):
-        a[s+i], a[e-i] = a[e-i], a[s+i]
-a.pop(0)
+    for i in range((e-s+1) // 2): # 범위를 생각
+        a[s+i], a[e-i] = a[e-i], a[s+i] # 두개 교환하는 방법
+a.pop(0) # 맨 앞에 있는 0을 제거함
 for x in a
     print(x, end=' ')
 

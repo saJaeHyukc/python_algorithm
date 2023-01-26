@@ -16,6 +16,8 @@ print(' '.join(map(str, array)))
 '''모범 답안
 # 이문제를 낸 의도는 sort를 사용하지 않고 정렬하는 것이 목적이다.
 # sort는 nlogn의 시간복잡도가 되는데 n번의 시간복잡도가 되는 정렬을 아래에 작성
+# 결론: 이미 정렬이 되어있으면 sort 쓰는 것보다 아래 처럼 쓰는 것이 시간복잡도를 줄일 수 있음 
+
 n = int(input())
 a = list(map(int, input().split()))
 m = int(input())

@@ -35,7 +35,7 @@ a.append(6)
 print(a) # [1, 2 ,3 ,4 ,5, 6] append 뒤에 추가해줌
 
 a.insert(3, 7)
-print(a) # [1, 2 ,3 7, 4 ,5, 6] insert 3인덱스 지점에 7을 넣음
+print(a) # [1, 2 ,3 ,7, 4 ,5, 6] insert 3인덱스 지점에 7을 넣음
 
 a.pop()
 print(a) # [1, 2 ,3, 7, 4 ,5] pop 맨뒤에 인덱스를 뺌

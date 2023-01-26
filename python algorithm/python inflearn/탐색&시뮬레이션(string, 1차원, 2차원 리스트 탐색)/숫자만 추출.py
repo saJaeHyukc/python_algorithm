@@ -38,5 +38,4 @@ for i in range(1, res+1):
     if rest % i == 0:
         cnt += 1
 print(cnt)
-        
 '''
