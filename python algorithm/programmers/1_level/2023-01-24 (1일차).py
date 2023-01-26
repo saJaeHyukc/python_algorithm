@@ -7,6 +7,3 @@ def solution(n):
         if n % i == 0:
             cnt += i
     return cnt
-
-print(solution(12))
-print(solution(5))
